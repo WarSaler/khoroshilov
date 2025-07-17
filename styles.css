@@ -790,4 +790,18 @@ section {
 }
 .project-card .btn {
     margin-top: 1rem;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: block;
+}
+.project-link:hover {
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18);
+    transform: translateY(-7px) scale(1.04);
+    color: inherit;
+}
+.project-link h3, .project-link p {
+    color: #2c3e50;
 } 
