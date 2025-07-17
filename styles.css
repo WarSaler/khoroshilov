@@ -628,6 +628,20 @@ section {
     border-color: #3498db;
 }
 
+.form-status {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    min-height: 1.5em;
+    text-align: center;
+    transition: color 0.3s;
+}
+.form-status.success {
+    color: #27ae60;
+}
+.form-status.error {
+    color: #e74c3c;
+}
+
 /* Подвал */
 .footer {
     background: #2c3e50;

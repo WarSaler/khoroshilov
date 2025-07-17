@@ -143,6 +143,38 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Обработка формы обратной связи (Formspree)
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('form-status');
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            status.textContent = '';
+            status.className = 'form-status';
+            const data = new FormData(form);
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                if (response.ok) {
+                    status.textContent = 'Спасибо! Ваше сообщение отправлено.';
+                    status.classList.add('success');
+                    form.reset();
+                } else {
+                    status.textContent = 'Ошибка при отправке. Попробуйте ещё раз.';
+                    status.classList.add('error');
+                }
+            } catch (error) {
+                status.textContent = 'Ошибка сети. Попробуйте позже.';
+                status.classList.add('error');
+            }
+        });
+    }
+
     // Печатающий эффект для заголовка
     function typeWriter(element, text, speed = 100) {
         let i = 0;

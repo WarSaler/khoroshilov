@@ -378,7 +378,7 @@
                 
                 <div class="contact-form">
                     <h3>Отправить сообщение</h3>
-                    <form action="https://formspree.io/f/mzzvzzvo" method="POST">
+                    <form id="contactForm" action="https://formspree.io/f/mzzvzzvo" method="POST">
                         <div class="form-group">
                             <input type="text" name="name" placeholder="Ваше имя" required>
                         </div>
@@ -392,6 +392,7 @@
                             <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                        <div id="form-status" class="form-status"></div>
                     </form>
                 </div>
             </div>
