@@ -748,4 +748,33 @@ section {
 }
 .project-card .btn {
     margin-top: 1rem;
+}
+
+.top-messengers {
+    width: 100%;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    border-bottom: 1px solid #e0e0e0;
+}
+.top-messengers .btn {
+    font-size: 1rem;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .top-messengers {
+        justify-content: center;
+        padding: 0.5rem 0.5rem;
+    }
+    .top-messengers .btn {
+        font-size: 0.95rem;
+        padding: 7px 12px;
+    }
 } 
