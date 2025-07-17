@@ -117,31 +117,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Обработка формы контактов
-    const contactForm = document.querySelector('.contact-form form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Получаем данные формы
-            const formData = new FormData(this);
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const message = this.querySelector('textarea').value;
-
-            // Простая валидация
-            if (!name || !email || !message) {
-                alert('Пожалуйста, заполните все поля');
-                return;
-            }
-
-            // Здесь можно добавить отправку данных на сервер
-            alert('Спасибо за сообщение! Я свяжусь с вами в ближайшее время.');
-            
-            // Очищаем форму
-            this.reset();
-        });
-    }
+    // Удаляю старый обработчик формы контактов, чтобы не было ошибок
+    // const contactForm = document.querySelector('.contact-form form');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function(e) {
+    //         e.preventDefault();
+    //         // Получаем данные формы
+    //         const formData = new FormData(this);
+    //         const name = this.querySelector('input[type="text"]').value;
+    //         const email = this.querySelector('input[type="email"]').value;
+    //         const message = this.querySelector('textarea').value;
+    //         // Простая валидация
+    //         if (!name || !email || !message) {
+    //             alert('Пожалуйста, заполните все поля');
+    //             return;
+    //         }
+    //         // Здесь можно добавить отправку данных на сервер
+    //         alert('Спасибо за сообщение! Я свяжусь с вами в ближайшее время.');
+    //         // Очищаем форму
+    //         this.reset();
+    //     });
+    // }
 
     // Обработка формы обратной связи (Formspree)
     const form = document.getElementById('contactForm');
