@@ -779,6 +779,9 @@ section {
     padding: 2rem;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .project-card:hover {
     transform: translateY(-5px) scale(1.03);
@@ -794,4 +797,11 @@ section {
 }
 .project-card .btn {
     margin-top: 1rem;
+}
+
+.project-button-container {
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
 } 
