@@ -73,7 +73,7 @@
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Аланья, Турция</span>
+                        <span>Армения</span>
                     </div>
                 </div>
             </div>
@@ -201,15 +201,19 @@
                     </div>
                     <p class="project-tech"><b>Стек:</b> SwiftUI · Combine · Charts · MVVM</p>
                     <div class="project-button-container">
+                        <a href="https://apps.apple.com/us/app/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D1%83%D0%BC/id6748887194" target="_blank" class="btn btn-appstore" onclick="event.stopPropagation()">
+                            <i class="fab fa-apple"></i> App Store
+                        </a>
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-konvertum')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
 
                 <!-- Telegram Crisp Bridge -->
                 <div class="project-card" onclick="openModal('modal-crisp')" style="cursor: pointer;">
+                    <img src="images/Telegram → Crisp Bridge img/image.png" alt="Скриншот Crisp Bridge" class="project-img">
                     <div class="project-badge project-badge--docker"><i class="fab fa-docker"></i> Docker · Open Source</div>
                     <h3>🔗 Telegram → Crisp Bridge</h3>
-                    <p>Мост для двусторонней синхронизации сообщений между Telegram-группами и Crisp. Поддержка всех типов медиа и webhook-режим.</p>
+                    <p>Крупный высоконагруженный проект, служащий мостом между Telegram и платформой Crisp посредством самописной API интеграции.</p>
                     <div class="project-features">
                         <span class="feature-tag"><i class="fas fa-exchange-alt"></i> Синхронизация</span>
                         <span class="feature-tag"><i class="fas fa-bolt"></i> Webhook</span>
@@ -217,6 +221,7 @@
                     </div>
                     <p class="project-tech"><b>Стек:</b> Node.js · Docker · Traefik · SQLite</p>
                     <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/telegram-crisp-bridge" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-crisp')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
@@ -233,6 +238,7 @@
                     </div>
                     <p class="project-tech"><b>Стек:</b> Python · Google Sheets API · Docker</p>
                     <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/telegram-repeat-bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-reminder')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
@@ -249,6 +255,7 @@
                     </div>
                     <p class="project-tech"><b>Стек:</b> Python · Gemini API · Telegram Bot API</p>
                     <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/Google_gemini_bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-gemini')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
@@ -268,12 +275,7 @@
             </div>
             <div class="modal-body">
                 <div class="modal-media">
-                    <div class="project-video-wrapper">
-                        <video class="project-video" controls playsinline poster="images/Konvertum.png" style="max-height: 400px;">
-                            <source src="Конвертум (Новое приложение для iOS).mp4" type="video/mp4">
-                        </video>
-                        <div class="video-label"><i class="fas fa-play-circle"></i> Видео-обзор приложения</div>
-                    </div>
+                    <img src="images/Konvertum.png" alt="Konvertum скриншот" class="modal-img modal-img--single">
                 </div>
                 <p class="modal-description">
                     <b>Konvertum</b> — это современное iOS-приложение для конвертации валют с элегантным дизайном и мощным функционалом. 
@@ -350,10 +352,12 @@
                 <h2>🔗 Telegram → Crisp Bridge</h2>
             </div>
             <div class="modal-body">
+                <div class="modal-media">
+                    <img src="images/Telegram → Crisp Bridge img/image.png" alt="Crisp Bridge скриншот 1" class="modal-img">
+                    <img src="images/Telegram → Crisp Bridge img/PHOTO-2026-04-30-17-23-14.jpg" alt="Crisp Bridge скриншот 2" class="modal-img" style="margin-top: 1rem;">
+                </div>
                 <p class="modal-description">
-                    Мост между Telegram-группами и Crisp-разговорами. Сообщения из Telegram автоматически проксируются в Crisp, 
-                    а ответы операторов из Crisp отправляются обратно в Telegram. Полная двусторонняя синхронизация с поддержкой 
-                    всех типов медиа, реакций и цитирования.
+                    <b>Telegram → Crisp Bridge</b> — это крупный и высоконагруженный проект, служащий надежным мостом между Telegram и платформой Crisp посредством сложной самописной API-интеграции. Бот добавляется в Telegram-группы через систему интеграций и обеспечивает бесшовное общение чатной поддержки. Проект отлично зарекомендовал себя как крайне стабильное и ценное решение: в интеграцию вовлечено более 1000 Telegram-групп, которые бесперебойно обслуживают 52 оператора в режиме 24/7.
                 </p>
 
                 <div class="modal-features-grid">
@@ -671,7 +675,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Местоположение</h4>
-                                <p>Аланья, Турция</p>
+                                <p>Армения</p>
                                 <small>Удалённая работа</small>
                             </div>
                         </div>
