@@ -355,3 +355,35 @@ function addSkill(name, percentage) {
     
     skillsGrid.appendChild(skillItem);
 } 
+// Модальные окна проектов
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Предотвращаем прокрутку фона
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+        
+        // Останавливаем видео, если оно есть в модалке
+        const video = modal.querySelector('video');
+        if (video) {
+            video.pause();
+        }
+    }
+}
+
+// Закрытие по клавише Esc
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const openModals = document.querySelectorAll('.project-modal.show');
+        openModals.forEach(modal => {
+            closeModal(modal.id);
+        });
+    }
+});
