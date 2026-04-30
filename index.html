@@ -259,6 +259,24 @@
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-gemini')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
+
+                <!-- TG-Forwarder -->
+                <div class="project-card" onclick="openModal('modal-tg-forwarder')" style="cursor: pointer;">
+                    <img src="images/TG-Forwarder.jpg" alt="Скриншот TG-Forwarder" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Автоматизация</div>
+                    <h3>🔄 TG-Forwarder</h3>
+                    <p>Бот для автоматической пересылки сообщений из топиков с определённым названием в единый канал с умной фильтрацией и маршрутизацией.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-filter"></i> Фильтрация</span>
+                        <span class="feature-tag"><i class="fas fa-route"></i> Маршрутизация</span>
+                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Анти-спам</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python · Telethon · Docker · asyncio</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/TG-Forwarder" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-tg-forwarder')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -491,6 +509,74 @@
                 </div>
                 <div class="modal-actions">
                     <a href="https://github.com/WarSaler/Google_gemini_bot" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: TG-Forwarder -->
+    <div id="modal-tg-forwarder" class="project-modal" onclick="if(event.target===this)closeModal(this.id)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-tg-forwarder')">&times;</button>
+            <div class="modal-header">
+                <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Автоматизация</div>
+                <h2>🔄 TG-Forwarder</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img src="images/TG-Forwarder.jpg" alt="Скриншот TG-Forwarder" class="modal-img modal-img--single">
+                </div>
+                <p class="modal-description">
+                    <b>Telegram Topic Forwarder Bot</b> — это инструмент для автоматической пересылки сообщений из топиков с определённым названием в единый канал. Бот работает в компании стабильно и приносит значительную пользу, автоматизируя рутинные задачи и уменьшая ручной труд.
+                </p>
+                <div class="modal-features-grid">
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-cogs"></i> Как это работает</h4>
+                        <ul>
+                            <li>Автоматическое определение топиков при создании и переименовании</li>
+                            <li>Фильтрация: обработка только целевых сообщений</li>
+                            <li>Автоответ в исходный топик о принятии запроса</li>
+                            <li>Кулдаун (Cooldown) для защиты от спама</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-route"></i> Маршрутизация</h4>
+                        <ul>
+                            <li><b>Обычный режим:</b> пересылка в топик <code>Questions to Accounts</code></li>
+                            <li><b>Режим INR:</b> пересылка в спец-топик, если в названии исходной группы есть "INR"</li>
+                            <li>Сохранение контекста и названия оригинальной группы</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-server"></i> Инфраструктура</h4>
+                        <ul>
+                            <li>Легкая конфигурация через <code>.env</code> файл</li>
+                            <li>Полная поддержка Docker и Docker Compose</li>
+                            <li>Изолированное виртуальное окружение</li>
+                            <li>Скрипты для удобного получения ID топиков</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-shield-alt"></i> Стабильность</h4>
+                        <ul>
+                            <li>Умный кэш топиков (topic_cache.json)</li>
+                            <li>Обход Privacy Mode Telegram-групп</li>
+                            <li>Управление сессиями Telethon</li>
+                            <li>Подробное логирование всех операций</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-tech">
+                    <h4><i class="fas fa-microchip"></i> Технологический стек</h4>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fab fa-python"></i> Python</span>
+                        <span class="feature-tag"><i class="fas fa-paper-plane"></i> Telethon</span>
+                        <span class="feature-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="feature-tag"><i class="fas fa-bolt"></i> asyncio</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="https://github.com/WarSaler/TG-Forwarder" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
                 </div>
             </div>
         </div>
