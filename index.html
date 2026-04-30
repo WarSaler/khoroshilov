@@ -277,6 +277,24 @@
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-tg-forwarder')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
+
+                <!-- Monitoring Bot -->
+                <div class="project-card" onclick="openModal('modal-monitoring')" style="cursor: pointer;">
+                    <img src="images/Monitoring.png" alt="Скриншот Monitoring Bot" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Интеграция</div>
+                    <h3>🔍 Monitoring Bot</h3>
+                    <p>Telegram-бот для автоматической маршрутизации сообщений мониторинга с динамическим изучением групп и умным парсингом.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-search"></i> Парсинг</span>
+                        <span class="feature-tag"><i class="fas fa-network-wired"></i> Маршрутизация</span>
+                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Anti-Ban</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python 3.11 · Telethon · Docker · pytest</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/Monitoring-UMBB-Bot.git" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-monitoring')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -582,6 +600,71 @@
         </div>
     </div>
 
+    <!-- Modal: Monitoring Bot -->
+    <div id="modal-monitoring" class="project-modal" onclick="if(event.target===this)closeModal(this.id)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-monitoring')">&times;</button>
+            <div class="modal-header">
+                <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Интеграция</div>
+                <h2>🔍 Monitoring Bot</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img src="images/Monitoring.png" alt="Скриншот Monitoring Bot" class="modal-img modal-img--single">
+                </div>
+                <p class="modal-description">
+                    <b>Monitoring Bot</b> — это Telegram-бот для автоматической маршрутизации сообщений мониторинга. Бот отслеживает сообщения в группе, парсит их, определяет тип и рассылает уведомления в соответствующие группы. Решение обладает высокой стабильностью и автоматическим кэшированием групп.
+                </p>
+                <div class="modal-features-grid">
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-search"></i> Парсинг сообщений</h4>
+                        <ul>
+                            <li><b>Тип 1 (Тестовые платежи):</b> Извлекает имена агентов, определяет целевую группу по валюте (MAD, BDT, PKR, KGS, INR) и формирует уведомление.</li>
+                            <li><b>Тип 2 (Отключённые реквизиты):</b> Извлекает имя партнёра и реквизиты, формируя блок-цитату с моноширинным текстом.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-network-wired"></i> Автоматическая маршрутизация</h4>
+                        <ul>
+                            <li>Отправка в целевую группу, совпадающую с именем партнёра.</li>
+                            <li>Динамическое изучение: бот автоматически запоминает новые группы и сохраняет их в <code>groups.json</code>.</li>
+                            <li>Использование HTML-форматирования (blockquote, code) для красивого отображения.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-shield-alt"></i> Защита и Алерты</h4>
+                        <ul>
+                            <li><b>Anti-Ban:</b> Предотвращение блокировки (бот не пишет в неизвестные группы).</li>
+                            <li>Оповещения об ошибках в специальную алерт-группу с полным текстом ошибки и именем группы.</li>
+                            <li>Полное логирование и удалённая отладка (<code>debug_remote.py</code>).</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-server"></i> Деплой и Инфраструктура</h4>
+                        <ul>
+                            <li>Docker + Docker Compose для изоляции и простого запуска.</li>
+                            <li>Деплой одной командой: <code>python deploy.py</code> автоматически подключается по SSH, обновляет код и пересобирает контейнер.</li>
+                            <li>Юнит-тесты на <code>pytest</code> для стабильности парсинга.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-tech">
+                    <h4><i class="fas fa-microchip"></i> Технологический стек</h4>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fab fa-python"></i> Python 3.11</span>
+                        <span class="feature-tag"><i class="fas fa-paper-plane"></i> Telethon</span>
+                        <span class="feature-tag"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="feature-tag"><i class="fas fa-rocket"></i> Paramiko (SSH Deploy)</span>
+                        <span class="feature-tag"><i class="fas fa-vial"></i> pytest</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="https://github.com/WarSaler/Monitoring-UMBB-Bot.git" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Навыки -->
     <section id="skills" class="skills">
         <div class="container">
@@ -814,6 +897,12 @@
         </div>
     </footer>
 
+    <!-- Lightbox Overlay -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

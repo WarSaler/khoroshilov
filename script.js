@@ -381,9 +381,43 @@ function closeModal(modalId) {
 // Закрытие по клавише Esc
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Escape') {
-        const openModals = document.querySelectorAll('.project-modal.show');
-        openModals.forEach(modal => {
-            closeModal(modal.id);
-        });
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox && lightbox.classList.contains('show')) {
+            closeLightbox();
+        } else {
+            const openModals = document.querySelectorAll('.project-modal.show');
+            openModals.forEach(modal => {
+                closeModal(modal.id);
+            });
+        }
     }
+});
+
+// Lightbox для картинок
+function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    if (lightbox && lightboxImg) {
+        lightboxImg.src = src;
+        lightbox.classList.add('show');
+    }
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.classList.remove('show');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Добавляем обработчик на все картинки в карточках и модалках
+    const images = document.querySelectorAll('.project-img, .modal-img');
+    images.forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openLightbox(this.src);
+        });
+    });
 });
