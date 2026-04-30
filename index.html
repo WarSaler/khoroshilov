@@ -295,6 +295,24 @@
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-monitoring')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
+
+                <!-- TG Manager -->
+                <div class="project-card" onclick="openModal('modal-tg-manager')" style="cursor: pointer;">
+                    <img src="images/TG Manager/image.png" alt="Скриншот TG Manager" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-react"></i> React · <i class="fab fa-python"></i> FastAPI</div>
+                    <h3>📊 TG Manager (CRM)</h3>
+                    <p>Профессиональная CRM-система для управления множеством Telegram-аккаунтов из единого интерфейса с ролевой моделью и рассылками.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-users"></i> Мультиаккаунт</span>
+                        <span class="feature-tag"><i class="fas fa-comments"></i> Real-time чаты</span>
+                        <span class="feature-tag"><i class="fas fa-tasks"></i> CRM & Задачи</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> React · Zustand · FastAPI · PostgreSQL · WebSockets</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/TG_Manager.git" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-tg-manager')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -660,6 +678,77 @@
                 </div>
                 <div class="modal-actions">
                     <a href="https://github.com/WarSaler/Monitoring-UMBB-Bot.git" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: TG Manager -->
+    <div id="modal-tg-manager" class="project-modal" onclick="if(event.target===this)closeModal(this.id)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-tg-manager')">&times;</button>
+            <div class="modal-header">
+                <div class="project-badge project-badge--docker"><i class="fab fa-react"></i> React · <i class="fab fa-python"></i> FastAPI</div>
+                <h2>📊 TG Manager (Telegram CRM)</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img src="images/TG Manager/image.png" alt="TG Manager Dashboard" class="modal-img">
+                    <img src="images/TG Manager/image copy.png" alt="TG Manager Chat" class="modal-img" style="margin-top: 1rem;">
+                    <img src="images/TG Manager/image copy 2.png" alt="TG Manager CRM" class="modal-img" style="margin-top: 1rem;">
+                    <img src="images/TG Manager/image copy 3.png" alt="TG Manager Tasks" class="modal-img" style="margin-top: 1rem;">
+                </div>
+                <p class="modal-description">
+                    <b>TG Manager</b> — это профессиональная CRM-система для управления множеством Telegram-аккаунтов из единого интерфейса. Платформа позволяет командам операторов работать с клиентами через Telegram, не передавая им прямой доступ к аккаунтам, а также предоставляет функционал рассылок, задач, email-кампаний и внутренней коммуникации.
+                </p>
+                <div class="modal-features-grid">
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-users-cog"></i> Управление TG Аккаунтами</h4>
+                        <ul>
+                            <li>Подключение любого количества аккаунтов.</li>
+                            <li>Авторизация по номеру телефона, QR-коду или импорт TData.</li>
+                            <li>Индивидуальные SOCKS5/HTTP прокси для каждого аккаунта во избежание блокировок.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-comments"></i> Чаты в реальном времени</h4>
+                        <ul>
+                            <li>Фоновая синхронизация истории переписок в базу PostgreSQL.</li>
+                            <li>Моментальная доставка сообщений на клиент через WebSockets.</li>
+                            <li>Ролевая модель: Тимлид (назначает диалоги) и Оператор (видит только свои чаты).</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-tasks"></i> Контакты и Задачи</h4>
+                        <ul>
+                            <li>Автоматическое сохранение контактов из Telegram-диалогов.</li>
+                            <li>Встроенный Kanban-трекер задач с напоминаниями и дедлайнами.</li>
+                            <li>Массовые рассылки по базам контактов.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-envelope-open-text"></i> Email и Внутренние чаты</h4>
+                        <ul>
+                            <li>Встроенный почтовый клиент с SMTP/IMAP и отслеживанием прочтений (Tracking Pixel).</li>
+                            <li>Внутренний корпоративный мессенджер для команды (без выхода в публичный Telegram).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-tech">
+                    <h4><i class="fas fa-microchip"></i> Технологический стек</h4>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fab fa-react"></i> React 18</span>
+                        <span class="feature-tag"><i class="fas fa-code"></i> TypeScript</span>
+                        <span class="feature-tag"><i class="fas fa-wind"></i> TailwindCSS</span>
+                        <span class="feature-tag"><i class="fas fa-database"></i> Zustand</span>
+                        <span class="feature-tag"><i class="fab fa-python"></i> FastAPI</span>
+                        <span class="feature-tag"><i class="fas fa-server"></i> PostgreSQL</span>
+                        <span class="feature-tag"><i class="fas fa-paper-plane"></i> Telethon / Pyrogram</span>
+                        <span class="feature-tag"><i class="fas fa-plug"></i> WebSockets</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="https://github.com/WarSaler/TG_Manager.git" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
                 </div>
             </div>
         </div>
