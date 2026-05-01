@@ -209,94 +209,6 @@
                     </div>
                 </div>
 
-                <!-- Telegram Crisp Bridge -->
-                <div class="project-card" onclick="openModal('modal-crisp')" style="cursor: pointer;">
-                    <img src="images/Telegram → Crisp Bridge img/image.png" alt="Скриншот Crisp Bridge" class="project-img">
-                    <div class="project-badge project-badge--docker"><i class="fab fa-docker"></i> Docker · Open Source</div>
-                    <h3>🔗 Telegram → Crisp Bridge</h3>
-                    <p>Крупный высоконагруженный проект, служащий мостом между Telegram и платформой Crisp посредством самописной API интеграции.</p>
-                    <div class="project-features">
-                        <span class="feature-tag"><i class="fas fa-exchange-alt"></i> Синхронизация</span>
-                        <span class="feature-tag"><i class="fas fa-bolt"></i> Webhook</span>
-                        <span class="feature-tag"><i class="fas fa-lock"></i> SSL</span>
-                    </div>
-                    <p class="project-tech"><b>Стек:</b> Node.js · Docker · Traefik · SQLite</p>
-                    <div class="project-button-container">
-                        <a href="https://github.com/WarSaler/telegram-crisp-bridge" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
-                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-crisp')"><i class="fas fa-info-circle"></i> Подробнее</button>
-                    </div>
-                </div>
-
-                <!-- Telegram Reminder Bot -->
-                <div class="project-card" onclick="openModal('modal-reminder')" style="cursor: pointer;">
-                    <img src="bot_interface.jpeg" alt="Скриншот Telegram Reminder Bot" class="project-img">
-                    <h3>🤖 Reminder Bot 2.0</h3>
-                    <p>Telegram-бот для напоминаний с интеграцией Google Sheets, автоматическим восстановлением и мониторингом.</p>
-                    <div class="project-features">
-                        <span class="feature-tag"><i class="fas fa-bell"></i> Напоминания</span>
-                        <span class="feature-tag"><i class="fas fa-table"></i> Google Sheets</span>
-                        <span class="feature-tag"><i class="fab fa-docker"></i> Docker</span>
-                    </div>
-                    <p class="project-tech"><b>Стек:</b> Python · Google Sheets API · Docker</p>
-                    <div class="project-button-container">
-                        <a href="https://github.com/WarSaler/telegram-repeat-bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
-                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-reminder')"><i class="fas fa-info-circle"></i> Подробнее</button>
-                    </div>
-                </div>
-
-                <!-- Google Gemini Bot -->
-                <div class="project-card" onclick="openModal('modal-gemini')" style="cursor: pointer;">
-                    <img src="images/gemini_bot_interface.jpeg" alt="Скриншот Google Gemini Bot" class="project-img">
-                    <h3>🤖 Gemini Telegram Bot</h3>
-                    <p>Интеллектуальный бот на базе Google Gemini для анализа изображений, генерации ответов и диалога на естественном языке.</p>
-                    <div class="project-features">
-                        <span class="feature-tag"><i class="fas fa-brain"></i> AI</span>
-                        <span class="feature-tag"><i class="fas fa-image"></i> Анализ фото</span>
-                        <span class="feature-tag"><i class="fas fa-microphone"></i> Голос</span>
-                    </div>
-                    <p class="project-tech"><b>Стек:</b> Python · Gemini API · Telegram Bot API</p>
-                    <div class="project-button-container">
-                        <a href="https://github.com/WarSaler/Google_gemini_bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
-                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-gemini')"><i class="fas fa-info-circle"></i> Подробнее</button>
-                    </div>
-                </div>
-
-                <!-- TG-Forwarder -->
-                <div class="project-card" onclick="openModal('modal-tg-forwarder')" style="cursor: pointer;">
-                    <img src="images/TG-Forwarder.jpg" alt="Скриншот TG-Forwarder" class="project-img">
-                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Автоматизация</div>
-                    <h3>🔄 TG-Forwarder</h3>
-                    <p>Бот для автоматической пересылки сообщений из топиков с определённым названием в единый канал с умной фильтрацией и маршрутизацией.</p>
-                    <div class="project-features">
-                        <span class="feature-tag"><i class="fas fa-filter"></i> Фильтрация</span>
-                        <span class="feature-tag"><i class="fas fa-route"></i> Маршрутизация</span>
-                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Анти-спам</span>
-                    </div>
-                    <p class="project-tech"><b>Стек:</b> Python · Telethon · Docker · asyncio</p>
-                    <div class="project-button-container">
-                        <a href="https://github.com/WarSaler/TG-Forwarder" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
-                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-tg-forwarder')"><i class="fas fa-info-circle"></i> Подробнее</button>
-                    </div>
-                </div>
-
-                <!-- Monitoring Bot -->
-                <div class="project-card" onclick="openModal('modal-monitoring')" style="cursor: pointer;">
-                    <img src="images/Monitoring.png" alt="Скриншот Monitoring Bot" class="project-img">
-                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Интеграция</div>
-                    <h3>🔍 Monitoring Bot</h3>
-                    <p>Telegram-бот для автоматической маршрутизации сообщений мониторинга с динамическим изучением групп и умным парсингом.</p>
-                    <div class="project-features">
-                        <span class="feature-tag"><i class="fas fa-search"></i> Парсинг</span>
-                        <span class="feature-tag"><i class="fas fa-network-wired"></i> Маршрутизация</span>
-                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Anti-Ban</span>
-                    </div>
-                    <p class="project-tech"><b>Стек:</b> Python 3.11 · Telethon · Docker · pytest</p>
-                    <div class="project-button-container">
-                        <a href="https://github.com/WarSaler/Monitoring-UMBB-Bot.git" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
-                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-monitoring')"><i class="fas fa-info-circle"></i> Подробнее</button>
-                    </div>
-                </div>
-
                 <!-- TG Manager -->
                 <div class="project-card" onclick="openModal('modal-tg-manager')" style="cursor: pointer;">
                     <img src="images/TG Manager/image.png" alt="Скриншот TG Manager" class="project-img">
@@ -348,6 +260,96 @@
                     <div class="project-button-container">
                         <a href="https://github.com/WarSaler/Nexus_GPT_-Jarvis-" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-nexus-gpt')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Telegram Crisp Bridge -->
+                <div class="project-card" onclick="openModal('modal-crisp')" style="cursor: pointer;">
+                    <img src="images/Telegram → Crisp Bridge img/image.png" alt="Скриншот Crisp Bridge" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-docker"></i> Docker · Open Source</div>
+                    <h3>🔗 Telegram → Crisp Bridge</h3>
+                    <p>Крупный высоконагруженный проект, служащий мостом между Telegram и платформой Crisp посредством самописной API интеграции.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-exchange-alt"></i> Синхронизация</span>
+                        <span class="feature-tag"><i class="fas fa-bolt"></i> Webhook</span>
+                        <span class="feature-tag"><i class="fas fa-lock"></i> SSL</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Node.js · Docker · Traefik · SQLite</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/telegram-crisp-bridge" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-crisp')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- TG-Forwarder -->
+                <div class="project-card" onclick="openModal('modal-tg-forwarder')" style="cursor: pointer;">
+                    <img src="images/TG-Forwarder.jpg" alt="Скриншот TG-Forwarder" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Автоматизация</div>
+                    <h3>🔄 TG-Forwarder</h3>
+                    <p>Бот для автоматической пересылки сообщений из топиков с определённым названием в единый канал с умной фильтрацией и маршрутизацией.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-filter"></i> Фильтрация</span>
+                        <span class="feature-tag"><i class="fas fa-route"></i> Маршрутизация</span>
+                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Анти-спам</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python · Telethon · Docker · asyncio</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/TG-Forwarder" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-tg-forwarder')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Monitoring Bot -->
+                <div class="project-card" onclick="openModal('modal-monitoring')" style="cursor: pointer;">
+                    <img src="images/Monitoring.png" alt="Скриншот Monitoring Bot" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Интеграция</div>
+                    <h3>🔍 Monitoring Bot</h3>
+                    <p>Telegram-бот для автоматической маршрутизации сообщений мониторинга с динамическим изучением групп и умным парсингом.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-search"></i> Парсинг</span>
+                        <span class="feature-tag"><i class="fas fa-network-wired"></i> Маршрутизация</span>
+                        <span class="feature-tag"><i class="fas fa-shield-alt"></i> Anti-Ban</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python 3.11 · Telethon · Docker · pytest</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/Monitoring-UMBB-Bot.git" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-monitoring')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Telegram Reminder Bot -->
+                <div class="project-card" onclick="openModal('modal-reminder')" style="cursor: pointer;">
+                    <img src="bot_interface.jpeg" alt="Скриншот Telegram Reminder Bot" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · Интеграция</div>
+                    <h3>🤖 Reminder Bot 2.0</h3>
+                    <p>Telegram-бот для напоминаний с интеграцией Google Sheets, автоматическим восстановлением и мониторингом.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-bell"></i> Напоминания</span>
+                        <span class="feature-tag"><i class="fas fa-table"></i> Google Sheets</span>
+                        <span class="feature-tag"><i class="fab fa-docker"></i> Docker</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python · Google Sheets API · Docker</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/telegram-repeat-bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-reminder')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Google Gemini Bot -->
+                <div class="project-card" onclick="openModal('modal-gemini')" style="cursor: pointer;">
+                    <img src="images/gemini_bot_interface.jpeg" alt="Скриншот Google Gemini Bot" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fab fa-python"></i> Python · ИИ-Ассистент</div>
+                    <h3>🤖 Gemini Telegram Bot</h3>
+                    <p>Интеллектуальный бот на базе Google Gemini для анализа изображений, генерации ответов и диалога на естественном языке.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-brain"></i> AI</span>
+                        <span class="feature-tag"><i class="fas fa-image"></i> Анализ фото</span>
+                        <span class="feature-tag"><i class="fas fa-microphone"></i> Голос</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> Python · Gemini API · Telegram Bot API</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/Google_gemini_bot" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-gemini')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
             </div>
