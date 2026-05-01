@@ -332,6 +332,24 @@
                         <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-vibe-vpn')"><i class="fas fa-info-circle"></i> Подробнее</button>
                     </div>
                 </div>
+
+                <!-- Nexus GPT -->
+                <div class="project-card" onclick="openModal('modal-nexus-gpt')" style="cursor: pointer;">
+                    <img src="images/Jarvis/image.png" alt="Скриншот Nexus GPT" class="project-img">
+                    <div class="project-badge project-badge--docker"><i class="fas fa-brain"></i> AI · <i class="fab fa-node-js"></i> Node.js</div>
+                    <h3>🌌 Nexus GPT (Jarvis)</h3>
+                    <p>Универсальная ИИ-архитектура нового поколения на базе OpenClaw для Telegram. Автономный ИИ-ассистент и рабочая среда.</p>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-paint-brush"></i> Live UI Builder</span>
+                        <span class="feature-tag"><i class="fas fa-plug"></i> API Интеграции</span>
+                        <span class="feature-tag"><i class="fas fa-memory"></i> Векторная Память</span>
+                    </div>
+                    <p class="project-tech"><b>Стек:</b> OpenClaw · Node.js · Nginx · SQLite (vec0)</p>
+                    <div class="project-button-container">
+                        <a href="https://github.com/WarSaler/Nexus_GPT_-Jarvis-" target="_blank" class="btn btn-secondary" style="text-decoration: none;" onclick="event.stopPropagation()"><i class="fab fa-github"></i> GitHub</a>
+                        <button class="btn btn-secondary btn-outline" onclick="event.stopPropagation(); openModal('modal-nexus-gpt')"><i class="fas fa-info-circle"></i> Подробнее</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -840,6 +858,75 @@
                 </div>
                 <div class="modal-actions">
                     <a href="https://github.com/WarSaler/Vibe_VPN_-IP_VPN-.git" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Nexus GPT -->
+    <div id="modal-nexus-gpt" class="project-modal" onclick="if(event.target===this)closeModal(this.id)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-nexus-gpt')">&times;</button>
+            <div class="modal-header">
+                <div class="project-badge project-badge--docker"><i class="fas fa-brain"></i> AI · <i class="fab fa-node-js"></i> Node.js</div>
+                <h2>🌌 Nexus GPT (Jarvis)</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <img src="images/Jarvis/image.png" alt="Nexus GPT Бот" class="modal-img modal-img--single">
+                </div>
+                <p class="modal-description">
+                    <b>Nexus GPT</b> — это не просто чат-бот. Это полноценный автономный ИИ-ассистент, построенный на глубоко модифицированном ядре OpenClaw. Проект стирает границы между мессенджером и полноценной рабочей средой (IDE), позволяя искусственному интеллекту не только отвечать на вопросы, но и создавать цифровые продукты, управлять аккаунтами и программировать прямо в вашем смартфоне.
+                </p>
+                <div class="modal-features-grid">
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-paint-brush"></i> Live UI Builder</h4>
+                        <ul>
+                            <li>Создание сайтов в Telegram: ИИ генерирует код, а вы сразу видите результат.</li>
+                            <li>Live-песочница (Mini App) моментально компилирует и отрисовывает рабочий React/TailwindCSS интерфейс.</li>
+                            <li>Отправка кнопки для мгновенного запуска результата.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-robot"></i> Фабрика Ботов (Managed Bots)</h4>
+                        <ul>
+                            <li>Ваш ИИ умеет создавать других ИИ!</li>
+                            <li>Автономное развертывание новых, полностью изолированных Telegram-ботов через кастомный API-мост.</li>
+                            <li>Назначение уникальных ролей и задач для созданных ботов.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-plug"></i> Безграничные Интеграции & API</h4>
+                        <ul>
+                            <li>Интеграция передовых моделей (Gemini 3.1, Claude 4.5, DeepSeek V3, Codex).</li>
+                            <li>Управление пользовательскими Telegram-аккаунтами (Userbot).</li>
+                            <li>Подключение email, трекеров задач и любых внешних API.</li>
+                            <li>Нативный Стриминг: текст от ИИ печатается в реальном времени с нулевой задержкой.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-feature-group">
+                        <h4><i class="fas fa-memory"></i> Память и Архитектура</h4>
+                        <ul>
+                            <li><b>Векторная Память (RAG):</b> Семантический поиск на базе SQLite vec0 для запоминания контекста.</li>
+                            <li><b>Перехватчики трафика:</b> Кэширование сгенерированного кода в Nginx.</li>
+                            <li><b>Динамические патчи:</b> Модификация ядра OpenClaw "на лету" (JS-патчи).</li>
+                            <li><b>Развертывание:</b> Оптимизация под легкие Ubuntu ARM64 VPS (Nginx + Node.js).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-tech">
+                    <h4><i class="fas fa-microchip"></i> Технологический стек</h4>
+                    <div class="project-features">
+                        <span class="feature-tag"><i class="fas fa-brain"></i> OpenClaw</span>
+                        <span class="feature-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="feature-tag"><i class="fab fa-telegram-plane"></i> Telegram API (Userbot & Bot)</span>
+                        <span class="feature-tag"><i class="fas fa-server"></i> Nginx</span>
+                        <span class="feature-tag"><i class="fas fa-database"></i> SQLite (vec0)</span>
+                        <span class="feature-tag"><i class="fab fa-react"></i> React / TailwindCSS</span>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="https://github.com/WarSaler/Nexus_GPT_-Jarvis-" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> Смотреть на GitHub</a>
                 </div>
             </div>
         </div>
